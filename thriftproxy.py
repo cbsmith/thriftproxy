@@ -11,12 +11,12 @@ Options:
 """
 
 from contextlib import contextmanager
-from itertools import chain, ifilter
 from docopt import docopt
+from itertools import chain, ifilter
 import re
-from thrift.transport import TSocket, TTransport
 from thrift.protocol import TBinaryProtocol
 from thrift.server import TServer
+from thrift.transport import TSocket, TTransport
 
 MAGIC_METHOD_RE = re.compile(R'^__.+?__$')
 DEBUGGING = True
