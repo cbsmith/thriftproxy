@@ -12,6 +12,6 @@ Used for cli documentation. Truly the only way to do command line argument parsi
 - Start the proxy :: Follow the usage directions built in to the script.
 
 #+BEGIN_EXAMPLE
-python cql.cassandra.Cassandra.Client 9161 9160
+python thriftproxy.py cql.cassandra.Cassandra.Client 9161 9160
 #+END_EXAMPLE
 - Done :: You can now hit the proxy as though it was the Thrift service
